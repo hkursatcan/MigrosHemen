@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/anasayfa_iconu"
+        android:fontFamily="@font/yantramanav_bold"
+        android:title="Anasayfa"
+        android:icon="@drawable/home_pic1" />
+
+    <item
+        android:id="@+id/arama_iconu"
+        android:fontFamily="@font/yantramanav_bold"
+        android:title="Arama"
+        android:icon="@drawable/arama_pic" />
+
+    <item
+        android:id="@+id/sepet_iconu"
+        android:fontFamily="@font/yantramanav_bold"
+        android:title="Sepetim"
+        android:icon="@drawable/shop_pic1" />
+
+    <item
+        android:id="@+id/kampanya_iconu"
+        android:fontFamily="@font/yantramanav_bold"
+        android:title="Kampanyalar"
+        android:icon="@drawable/gift_pic" />
+
+    <item
+        android:id="@+id/hesap_iconu"
+        android:fontFamily="@font/yantramanav_bold"
+        android:title="Hesabım"
+        android:icon="@drawable/user_pic" />
+
+</menu>

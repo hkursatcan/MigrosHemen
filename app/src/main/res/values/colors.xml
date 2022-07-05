@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="deneme_sarisi">#f7be07</color>     // deneyebiliriz
+    <color name="ana_sari">#ffc200</color>   // dış kısım tasarımı
+    <color name="alt_sari">#ffda67</color>   // üst perde burası
+    <color name="baska_sari">#fdc30e</color>
+    <color name="yazı_renk">#4e3a0f</color>  // yazılar burada
+    <color name="gri">#eceff1</color>  //gri
+
+
+</resources>

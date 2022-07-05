@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnasayfaFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_migros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewMigrosHemenPic"
+        android:layout_width="104dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_migros"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar_migros"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_migros"
+        app:layout_constraintVertical_bias="0.769"
+        app:srcCompat="@drawable/pic_migros_hemen" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="30dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_tusu" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:background="@color/alt_sari"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_migros">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/alt_sari">
+
+
+            <Button
+                android:id="@+id/textViewSıcakb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@color/alt_sari"
+                android:fontFamily="@font/yantramanav_bold"
+                android:gravity="center"
+                android:text="Sıcak &amp; Taze Yemek"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/yazı_renk" />
+
+            <Button
+                android:id="@+id/textViewMeyve"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@color/alt_sari"
+                android:fontFamily="@font/yantramanav_bold"
+                android:gravity="center"
+                android:text="Meyve &amp; Sebze"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/yazı_renk" />
+
+            <Button
+                android:id="@+id/textViewAtıstır"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@color/alt_sari"
+                android:fontFamily="@font/yantramanav_bold"
+                android:gravity="center"
+                android:text="Atıştırmalık"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/yazı_renk" />
+
+            <Button
+                android:id="@+id/textViewHizliYemek"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@color/alt_sari"
+                android:fontFamily="@font/yantramanav_bold"
+                android:gravity="center"
+                android:text="Hızlı Yemek &amp; Meze"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/yazı_renk" />
+
+            <TextView
+                android:id="@+id/textViewIcecek"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:textColor="@color/yazı_renk"
+                android:fontFamily="@font/yantramanav_bold"
+                android:gravity="center"
+                android:text="İçecek" />
+
+            <TextView
+                android:id="@+id/textViewHareketeGec"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:textColor="@color/yazı_renk"
+                android:fontFamily="@font/yantramanav_bold"
+                android:gravity="center"
+                android:text="Harekete Geç" />
+
+            <TextView
+                android:id="@+id/textViewDondurma"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:textColor="@color/yazı_renk"
+                android:fontFamily="@font/yantramanav_bold"
+                android:gravity="center"
+                android:text="Dondurma" />
+
+            <TextView
+                android:id="@+id/textViewOzelBeslenme"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/yantramanav_bold"
+                android:gravity="center"
+                android:text="Özel Beslenme" />
+
+            <TextView
+                android:id="@+id/textViewFırın"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:textColor="@color/yazı_renk"
+                android:fontFamily="@font/yantramanav_bold"
+                android:gravity="center"
+                android:text="Fırın" />
+
+            <TextView
+                android:id="@+id/textViewSut"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/yantramanav_bold"
+                android:gravity="center"
+                android:text="Süt &amp; Kahvaltılık" />
+
+            <TextView
+                android:id="@+id/textViewEt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:textColor="@color/yazı_renk"
+                android:fontFamily="@font/yantramanav_bold"
+                android:gravity="center"
+                android:text="Et Ürünleri" />
+
+            <TextView
+                android:id="@+id/textViewOAldımBitti"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/yantramanav_bold"
+                android:gravity="center"
+                android:text="Aldım Bitti" />
+
+            <TextView
+                android:id="@+id/textViewTemelGıda"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/yantramanav_bold"
+                android:gravity="center"
+                android:text="Temel Gıda" />
+
+            <TextView
+                android:id="@+id/textViewBebek"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/yantramanav_bold"
+                android:gravity="center"
+                android:text="Bebek" />
+
+            <TextView
+                android:id="@+id/textViewEvcilHayvan"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/yantramanav_bold"
+                android:gravity="center"
+                android:text="Evcil Hayvan" />
+
+            <TextView
+                android:id="@+id/textViewTemizlik"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/yantramanav_bold"
+                android:gravity="center"
+                android:text="Temizlik &amp; Ev Gereçleri" />
+
+            <TextView
+                android:id="@+id/textViewKisiselBakım"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/yantramanav_bold"
+                android:gravity="center"
+                android:text="Kişisel Bakım" />
+
+            <TextView
+                android:id="@+id/textViewCinselSaglık"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/yantramanav_bold"
+                android:gravity="center"
+                android:text="Cinsel Sağlık" />
+
+            <TextView
+                android:id="@+id/textViewGiyimAksesuar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/yantramanav_bold"
+                android:gravity="center"
+                android:text="Giyim &amp; Aksesuar" />
+
+            <TextView
+                android:id="@+id/textViewEvYasam"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/yantramanav_bold"
+                android:gravity="center"
+                android:text="Ev &amp; Yaşam" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="417dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/ana_sari"
+                android:fontFamily="@font/yantramanav_bold"
+                android:gravity="center"
+                android:text="Migros Ev Lezzetleri"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/yazı_renk" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/yantramanav_bold"
+                android:gravity="center"
+                android:text="Pizza Migo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/yazı_renk" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/navigation_tool"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView3" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView3"
+        android:layout_width="411dp"
+        android:layout_height="30dp"
+        android:background="@color/gri"
+        app:layout_constraintBottom_toTopOf="@+id/rv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="127dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/yantramanav_bold"
+                android:gravity="center"
+                android:text="Migros Ev Lezzetleri" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation_tool"
+        android:layout_width="423dp"
+        android:layout_height="wrap_content"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv"
+        app:menu="@menu/menu_button_nav" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
